@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="./transitions.css">
+        <link rel="stylesheet" href="./animations.css">
+</head>
+<body>
+    <div class="animation-warper">
+        <h2>Loader</h2>
+        <div class="loader loader_multi-color"></div>
+        </div>
+        <div class="block"></div>
+        <div class="arrow arrow-up"> </div>
+    </section>>
+</main>
+        </body>
+    </html>
+<style>
+    .loader{
+border: 15px solid lightgray;
+border-top: 15px solid green;
+border-radius: 50%;
+width:150px;
+height: 150px;
+animation: spin 2s linear infinite;
+}
+.loader_multi-color {
+    border-bottom: 15px solid black;
+    border-left: 15px solid white;
+    border-right: gray;
+}
+
+.arrow{
+    width: 0;
+    height: 0;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+}
+
+    .arrow:after{
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+    }
+
+
+.arrow-up{
+     border-left: 200px solid transparent;
+     border-right: 200px solid transparent;
+     border-bottom: 200px solid #333;
+}
+    .arrow-up:after{
+         top: 5px;
+         border-left: 150px solid transparent;
+         border-right: 150px solid transparent;
+         border-bottom: 150px solid #fff;
+         right: -50px;
+    }
+@keyframes spin {
+    form {
+    transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }  
+}
+</style>

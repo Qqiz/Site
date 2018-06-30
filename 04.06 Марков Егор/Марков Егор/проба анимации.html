@@ -1,0 +1,66 @@
+<html>
+        <div class="stage">
+                <figure class="ball"></figure>
+              </div>
+<head>
+<style>body {
+    font:600 14px/24px "Open Sans"
+}
+.box {
+    background: olive;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    width: 95px;
+}
+.box:hover {
+    background: firebrick;
+}
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 244px;
+    top: 100px;
+  }
+  100% {
+    left: 488px;
+    top: 0;
+  }
+}
+.stage {
+  background: #eaeaed;
+  border-radius: 6px;
+  height: 150px;
+  position: relative;
+  min-width: 538px;
+}
+.stage:hover .ball {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  }
+.ball {
+  background: #2db34a;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+figure {
+  margin: 0;
+}
+</style>
+<body>
+
+<div class="box">Блок</div>
+</body>
+</html>
